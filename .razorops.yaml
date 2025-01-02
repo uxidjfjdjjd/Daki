@@ -1,7 +1,7 @@
 version: v3
 global: 
   runner:
-    os_image: ubuntu # Use Ubuntu Linux as the OS
+    os_image: ubuntu 22.06 # Use Ubuntu Linux as the OS
   variables: 
   - CGO_ENABLED=0
   - GOOS=linux
