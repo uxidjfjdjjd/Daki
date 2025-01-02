@@ -1,4 +1,4 @@
-version: v2
+version: v3
 global: 
   runner:
     os_image: ubuntu # Use Ubuntu Linux as the OS
