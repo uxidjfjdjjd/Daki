@@ -10,6 +10,7 @@ global:
   - LD_FLAGS=-w -s
 
 tasks:
+  setup:
     steps:
     - checkout  # Clone the git repository
     - run: |
