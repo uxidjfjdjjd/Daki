@@ -9,7 +9,7 @@ attack_in_progress = False
 current_attack = None  # Store details of the current attack
 attack_history = []  # Store attack logs
 
-TELEGRAM_BOT_TOKEN = '7379603984:AAHHuW30X3d-ZVXNMM6AQ-rPE1Ft7fMtZ0s'
+TELEGRAM_BOT_TOKEN = '7379603984:AAE6XOopO3quHA5O2VzKY9sF57rah5CZZA0'
 ADMIN_USER_ID = 1300081723
 MONGO_URI = "mongodb+srv://Kamisama:Kamisama@kamisama.m6kon.mongodb.net/"
 DB_NAME = "sarkar"
@@ -41,7 +41,7 @@ async def update_user(user_id, coins):
 async def start(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     message = (
-        "*❄️ WELCOME TO DAKU VIP DDOS BOT ❄️*\n\n"
+        "*❄️ WELCOME TO SARKAR VIP DDOS BOT ❄️*\n\n"
         "*🔥 Yeh bot apko deta hai hacking ke maidan mein asli mazza! 🔥*\n\n"
         "*✨ Key Features: ✨*\n"
         "🚀 *𝘼𝙩𝙩𝙖𝙘𝙠 𝙠𝙖𝙧𝙤 𝙖𝙥𝙣𝙚 𝙤𝙥𝙥𝙤𝙣𝙚𝙣𝙩𝙨 𝙥𝙖𝙧 𝘽𝙜𝙢𝙞 𝙈𝙚 /attack*\n"
